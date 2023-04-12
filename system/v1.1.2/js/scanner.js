@@ -12,6 +12,12 @@ function onScanSuccess(qrCodeMessage) {
   }
 }
 
+const AUDIO = new Audio();
+AUDIO.autoplay = true;
+document.querySelector("#sound").addEventListener("click", () => {
+  beep();
+});
+
 function onScanError(errorMessage) {
   //handle scan error
 }
