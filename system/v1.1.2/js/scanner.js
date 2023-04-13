@@ -1,6 +1,6 @@
 
 const beep = () => {
-  AUDIO.src = "sounds/beep.mp3";
+  AUDIO.src = "sounds/beep1.mp3";
 }
 
 var currentText = '';
