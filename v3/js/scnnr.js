@@ -22,13 +22,13 @@ function onScanSuccess(qrCodeMessage) {
 
     if (xlength < 7) {
       beep();
-      customAlert.alert('Invalid Qr Code Data!\nReason: QrCode is malformed.','Error!');
+      alert("Error! QrCode Malformed");
   }
 
     else if (currentText !== qrCodeMessage) {
         currentText = qrCodeMessage;
         beep();
-        customAlert.alert('Scan completed!','Heads Up!');
+        alert("Scan complete!");
   }
   document.getElementById('fname').value = fname;
   document.getElementById('lname').value = lname;
