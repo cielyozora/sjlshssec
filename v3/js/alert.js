@@ -21,10 +21,12 @@ function CustomAlert(){
       document.getElementById('dialogboxhead').innerHTML = '<i class="fa fa-exclamation-circle" aria-hidden="true"></i> '+ title;
     }
     document.getElementById('dialogboxbody').innerHTML = message;
+
     document.getElementById('dialogboxfoot').innerHTML = '<button class="pure-material-button-contained active" onclick="customAlert.ok()">OK</button>';
   }
   
   this.ok = function(){
+    window.location.reload();
     document.getElementById('dialogbox').style.display = "none";
     document.getElementById('dialogoverlay').style.display = "none";
   }
