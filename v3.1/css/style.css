@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  background-color: #222222;
+  color: #ffffff;
+}
+
+.container {
+  margin: 10px;
+}
+
+.box {
+  background-color: #333333;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.results {
+  background-color: #444444;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+#result {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: left;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+
+.con {
+  margin-top: 30px;
+}
+
+#reader__dashboard_section_swaplink {
+  text-decoration: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+/*  */
+
+:root {
+  --color-dark: #A5D6A7;
+  --bcg-color: ;
+  --color-border: #00E5FF;
+}
+
+.wrapp {
+  justify-content: center;
+  background-color: var(--bcg-color);
+  width: 100%;
+  height: 100vh;
+}
+
+.form-title {
+  color: var(--color-dark);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.container .button-submit {
+  display: flex;
+  justify-content: center;
+}
+.container a {
+  padding: 10px 15px 10px 15px;
+  text-decoration: none;
+  color: var(--color-dark);
+  transition: 0.1s;
+
+}
+
+.container #sub {
+  padding: 10px 15px 10px 15px;
+  text-decoration: none;
+  color: var(--color-dark);
+  border: 1px solid;
+  transition: 0.1s;
+
+}
+.container sub:active {
+  opacity: 0.3;
+}
+.container input {
+  position: relative;
+  padding: 4px;
+  margin-bottom: 20px;
+  display: block;
+  border: 2px solid var(--color-dark);
+  border-radius: 5px;
+  font-size: 1.3rem;
+  color: var(--color-dark);
+  background-color: transparent;
+  transition: 0.2s;
+  min-width: 100%;
+}
+.container input:focus {
+  outline: none;
+}
+.container .input-box {
+  position: relative;
+}
+.container .input-box span {
+  position: absolute;
+  left: 10px;
+  bottom: 9px;
+  color: var(--color-dark);
+  transition: 0.2s;
+}
+.container .input-box input:focus, .container .input-box input:valid {
+  border-color: var(--color-border);
+}
+#form .input-box input:focus ~ span, .container .input-box input:valid ~ span {
+  padding: 3px;
+  bottom: 35px;
+  background-color: var(--bcg-color);
+  font-size: 0.7rem;
+  border: 1px solid var(--color-border);
+}
+
+.container .input-box input:valid ~ span {
+  left: ;
+
+}
+
+

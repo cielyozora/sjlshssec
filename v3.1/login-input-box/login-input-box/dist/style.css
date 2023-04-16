@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-dark: #A5D6A7;
+  --bcg-color: #880E4F;
+  --color-border: #00E5FF;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.wrapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bcg-color);
+  width: 100vw;
+  height: 100vh;
+}
+
+.form-title {
+  color: var(--color-dark);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.container {
+  position: relative;
+}
+.container .button-submit {
+  display: flex;
+  justify-content: center;
+}
+.container a {
+  padding: 10px 15px 10px 15px;
+  text-decoration: none;
+  color: var(--color-dark);
+  border: 1px solid;
+  transition: 0.1s;
+}
+.container a:active {
+  opacity: 0.3;
+}
+.container input {
+  position: relative;
+  padding: 4px;
+  margin-bottom: 20px;
+  display: block;
+  border: 2px solid var(--color-dark);
+  border-radius: 5px;
+  font-size: 1.3rem;
+  color: var(--color-dark);
+  background-color: transparent;
+  transition: 0.2s;
+}
+.container input:focus {
+  outline: none;
+}
+.container .input-box {
+  position: relative;
+}
+.container .input-box span {
+  position: absolute;
+  left: 10px;
+  bottom: 9px;
+  color: var(--color-dark);
+  transition: 0.2s;
+}
+.container .input-box input:focus, .container .input-box input:valid {
+  border-color: var(--color-border);
+}
+.container .input-box input:focus ~ span, .container .input-box input:valid ~ span {
+  padding: 3px;
+  bottom: 28px;
+  background-color: var(--bcg-color);
+  font-size: 0.7rem;
+  border: 1px solid var(--color-border);
+}
+.container .input-box input[type=password]:focus ~ span, .container .input-box input[type=password]:valid ~ span {
+  font-weight: bold;
+  background-color: var(--color-border);
+  color: var(--bcg-color);
+}
+.container .input-box input:valid ~ span {
+  left: 200px;
+}
