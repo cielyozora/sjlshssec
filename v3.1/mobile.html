@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QR Code Reader</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/alert.css">
+    <script src="js/qr.js"></script>
+    <script src="js/alert.js"></script>
+    <script src="js/protect.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h2>SJLSHS SECURITY</h2>
+        <div id="reader"></div>
+      </div>
+    </div>
+    <div class="wrapp">
+      <div class="container">
+        <form id="form" accept-charset="UTF-8">
+          <h3 class="form-title">Result</h3>
+          <div class="input-box">
+            <input type="text" id="fname" name="fname" required="valid">
+            <span>Name</span>
+          </div>
+          <div class="input-box">
+            <input type="text" id="lname" name="lname" required="valid">
+            <span>Surname</span>
+          </div>
+          <div class="input-box">
+            <input type="text" id="phone" name="phone" required="valid" onpaste="return true;">
+            <span>Phone</span>
+          </div>
+          <div class="button-submit">
+            <a href="https://m.me/xzx.gov.ph" id="sub">Feedback</a>
+            <button type="submit" id="sound" class="submit" hidden>Sound ON (iOS)</button>
+          </div>
+        </form>
+    </div>
+  </div>
+    <script src="js/scanner.js"></script>
+    <script src="js/sms1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    // Check if the user is using a mobile device
+    //if (/Mobi/.test(navigator.userAgent)) {
+      // Redirect to the mobile page
+    //} else {
+      // Show a message to use mobile if using web
+    //  window.location.href = "index.html";
+    //}
+  </script>
+  </body>
+</html>
