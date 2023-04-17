@@ -20,7 +20,7 @@ function formsubmit() {
   // AJAX code to submit form.
   $.ajax({
     type: 'POST',
-    url: 'https://sjlshsx.000webhostapp.com/i.php', //call storeemdata.php to store form data
+    url: 'i.php', //call storeemdata.php to store form data
     data: formdata,
     cache: false,
     success: function (html) {
